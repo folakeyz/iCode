@@ -1,26 +1,23 @@
-# iCode Solutions — HTML & CSS Website
+# iCode Solutions
 
-A responsive multi-page static website built with plain HTML5 and CSS3 only.
+Responsive static website using HTML and CSS, with a shared visual system and a dedicated TrekPulse privacy policy.
 
-## Pages
-- Home
-- About
-- Services
-- Industries
-- Portfolio
-- Process
-- Insights
-- Careers
-- FAQ
-- Contact
-- Request a Quote
-- Privacy Policy
-- Terms & Conditions
-- Cookie Policy
-- 404
+## Preview
 
-## Run
-Open `index.html` directly in a browser, or serve the folder with any static web server.
+Run `python3 -m http.server 8080` from this directory, then open `http://localhost:8080`. No build step or JavaScript dependencies are needed.
 
-## Notes
-The contact and quote forms are static because this version intentionally contains no JavaScript or backend. Update each form's `action` when connecting it to a form service or server endpoint. Replace placeholder contact details and have the legal templates reviewed for your jurisdiction and actual business practices before launch.
+## Design
+
+Warm neutral backgrounds, dark green sections, lime accents, fluid typography, accessible focus states, a native mobile menu, reduced-motion support and printable legal content. All fonts use local system fallbacks; the artwork is CSS.
+
+Contact and project actions open an email draft. They do not submit to a backend. Portfolio entries are capability examples; careers accepts expressions of interest rather than advertising unverified vacancies.
+
+## Privacy publication
+
+`privacy.html` is intended to be served at https://icode-site.netlify.app/privacy using Netlify's clean HTML URLs. The policy identifies TrekPulse and folaranmi, describes local health access and server-synced activity, and links to account deletion.
+
+Read [the privacy publication review](docs/trekpulse-privacy-review.md) before resubmission. Website wording does not resolve app permissions, consent, SDK behavior or Play Console declarations. Changes in this repository are not deployed automatically by this editing session.
+
+## Check
+
+Run `python3 scripts/check_site.py` for local link, anchor and document structure checks.
